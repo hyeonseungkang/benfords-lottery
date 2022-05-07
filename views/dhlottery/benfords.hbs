@@ -1,0 +1,70 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DHLottery with Benford's law</title>
+  <style>
+    .figure {
+      background-color: blue;
+      height: 10px;
+    }
+
+    .header-image {
+      height: 56px;
+    }
+  </style>
+</head>
+<body>
+<h1>
+  <img class="header-image" src="/images/dhlottery-logo.png"
+       alt="dhlottery logo">
+  <img class="header-image" src="/images/frank_benford.jpg"
+       alt="benford figure">
+  DHLottery with Benford's law
+</h1>
+<h3>raw</h3>
+<hr>
+<ul>
+  <li>0: {{0}}</li>
+  <li>1: {{1}}</li>
+  <li>2: {{2}}</li>
+  <li>3: {{3}}</li>
+  <li>4: {{4}}</li>
+  <li>entire: {{entire}}</li>
+</ul>
+<h3>percent value</h3>
+<hr>
+<ul>
+  <li>percent 0: {{p-0}}</li>
+  <li>percent 1: {{p-1}}</li>
+  <li>percent 2: {{p-2}}</li>
+  <li>percent 3: {{p-3}}</li>
+  <li>percent 4: {{p-4}}</li>
+  <li>percent entire: {{p-entire}}</li>
+</ul>
+<h3>figure</h3>
+<hr>
+<ul>
+  <li>percent 0:
+    <div style="width: {{p-0}}%" class="figure"></div>
+  </li>
+  <li>percent 1:
+    <div style="width: {{p-1}}%" class="figure"></div>
+  </li>
+  <li>percent 2:
+    <div style="width: {{p-2}}%" class="figure"></div>
+  </li>
+  <li>percent 3:
+    <div style="width: {{p-3}}%" class="figure"></div>
+  </li>
+  <li>percent 4:
+    <div style="width: {{p-4}}%" class="figure"></div>
+  </li>
+  <li>percent entire:
+    <div style="width: {{p-entire}}%" class="figure"></div>
+  </li>
+</ul>
+</body>
+</html>

@@ -1,7 +1,8 @@
-import { Column } from 'typeorm';
+import { Column, Entity, PrimaryColumn } from 'typeorm';
 
+@Entity()
 export class LotteryResultEntity {
-  @Column()
+  @PrimaryColumn()
   lotNo!: number;
 
   @Column()
