@@ -61,14 +61,10 @@ export class DhlotteryService {
     firstCharHash['entire'] = numbers.length;
     for (const number of numbers) {
       const str = number.toString(10);
-      if (str.length === 1) {
-        firstCharHash['0'] = !firstCharHash['0'] ? 1 : firstCharHash['0'] + 1;
-      } else {
-        const firstChar = str.slice(0, 1);
-        firstCharHash[firstChar] = !firstCharHash[firstChar]
-          ? 1
-          : firstCharHash[firstChar] + 1;
-      }
+      const firstChar = str.slice(0, 1);
+      firstCharHash[firstChar] = !firstCharHash[firstChar]
+        ? 1
+        : firstCharHash[firstChar] + 1;
     }
     const pValue = {};
     Object.keys(firstCharHash).forEach((v) => {
